@@ -1,4 +1,14 @@
-import { Controller } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
+import { ApiTags } from '@nestjs/swagger';
+import { TeamsService } from './teams.service';
 
 @Controller('teams')
-export class TeamsController {}
+@ApiTags('Teams')
+export class TeamsController {
+  constructor(private teamService: TeamsService) {}
+
+  @Get()
+  async find() {
+    return this.teamService.findAll();
+  }
+}
