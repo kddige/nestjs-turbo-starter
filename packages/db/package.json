@@ -1,0 +1,28 @@
+{
+  "name": "@qvik/db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "tsc --watch --preserveWatchOutput"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mikro-orm/core": "^5.7.4",
+    "@mikro-orm/postgresql": "^5.7.4"
+  },
+  "devDependencies": {
+    "@mikro-orm/cli": "^5.7.4",
+    "@mikro-orm/migrations": "^5.7.4",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.7.4"
+  },
+  "mikro-orm": {
+    "useTsNode": true
+  }
+}
