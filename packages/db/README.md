@@ -127,3 +127,6 @@ async function getAllUsers() {
   return userRepository.find();
 }
 ```
+
+## Migration + New Entity + New Repository
+TODO: Add migration instructions, and define workflow for migrations in the project. Its possible that we should consider to use database first approach, and generate the entities from the database schema. Im currently considering using PlanetScale, as we can use their branching technique to avoid migration conflicts. TLDR; fck migrations, use database first approach. 
